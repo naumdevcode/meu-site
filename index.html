@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NaumDev</title>
+    <link rel="shortcut icon" href="imagens/logo01-180.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+
+    
+          
+</head>
+<body>
+    <header>
+        <div class="cabeçalho">
+            <div class="logomarca">
+                <img id="logo" src="imagens/logo01-180.png" alt="Logo NaumDev">
+                <h1 id="marca">NaumDev</h1>
+            </div>
+            <div class="menu">
+                <Nav class="nav-menu">
+                    <ul>
+                        <li class="menu-item"><a href="#">Inicio</a></li>
+                        <li class="menu-item"><a href="#sobre">Sobre</a></li>
+                        <li class="menu-item"><a href="#skills">Skills</a></li>
+                        <li class="menu-item"><a href="#portfolio">Portfólio</a></li>
+                        <li class="menu-item"><a href="#contato">Contato</a></li>
+                    </ul>
+                </Nav>
+                <div class="button-menu">
+                <button onclick="clickmenu()" id="botao">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                </div>
+                <menu class="menu-button-menu">
+                    <ul>
+                        <li class="menu-item"><a href="#">Inicio</a></li>
+                        <li class="menu-item"><a href="#sobre">Sobre</a></li>
+                        <li class="menu-item"><a href="#skills">Skills</a></li>
+                        <li class="menu-item"><a href="#portfolio">Portfólio</a></li>
+                        <li class="menu-item"><a href="#contato">Contato</a></li>
+                    </ul>
+                </menu>
+            </div>
+        </div>
+        <div class="apresentacao">
+                <div id="ap-texto">
+                    <h1>Olá, Eu sou <br>
+                        Anndersom Naum <br>
+                        Desenvolvedor Web
+                    </h1>
+                </div>
+                <div id="ap-img">
+                    <img id="img-n" src="imagens/animacao.svg" alt="imagem">
+                </div>
+        </div>
+    </header>
+    <main>
+        <div id="sobre">
+            <h2>Sobre mim</h2>
+            <p class="sobre-tx">Olá! Meu nome é <strong>Anndersom Naum</strong>, e estou iniciando minha jornada como programador. Atualmente, estou me especializando em <strong>desenvolvimento web</strong>, aprendendo as bases do <strong>HTML, CSS</strong> e me aventurando no universo do <strong>JavaScript</strong>.</p>
+            
+            <p>Sou uma pessoa <strong>criativa, amigável e focada</strong>, sempre buscando aprender e crescer. Dedico meu tempo ao estudo constante da programação, porque acredito que a tecnologia é a ferramenta que pode <strong>transformar vidas</strong>, inclusive a minha.</p>
+            
+            <p>Quando não estou codando, gosto de assistir filmes, séries e animes, além de jogar videogame para relaxar e me inspirar. Meu objetivo é construir um <strong>futuro melhor</strong>, aplicando meu esforço e dedicação para criar projetos <strong>inovadores</strong> e <strong>funcionais</strong>.</p>
+            
+            <p>Este portfólio é uma representação do que estou aprendendo e do que ainda quero alcançar. <strong>Sinta-se à vontade para explorar e entrar em contato!</strong></p>
+        </div>
+        <div id="skills">
+            <h2>Skills</h2>
+            <div class="habilidades">
+                <i class="devicon-html5-plain colored"></i>
+                <i class="devicon-css3-plain colored"></i>
+                <i class="devicon-javascript-plain colored"></i>
+                <i class="devicon-wordpress-plain"></i>
+            </div>        
+        </div>
+        <div id="portfolio">
+            <div class="box-construcao">
+                <div class="emconstrucao">Em Construção</div>
+            </div>
+            <div class="portfolio-titulo">
+                <h2>Portfólio</h2>
+            </div>
+            <div class="carousel-container">
+                <div class="carousel">
+                    <div class="card">Card 1</div>
+                    <div class="card">Card 2</div>
+                    <div class="card">Card 3</div>
+                    <div class="card">Card 4</div>
+                </div>
+            </div>
+        </div>
+        <div id="contato">
+            <div class="contact">
+                <div class="box-construcao">
+                    <div class="emconstrucao">Em Construção</div>
+                </div>
+                <h2>Envie sua mensagem</h2>
+                <form id="contact-form">
+                    <label for="name">Nome*</label>
+                    <input type="text" name="user_name" required="">
+
+                    <label for="whatsapp">WhatsApp*</label>
+                    <input type="tel" name="user_phone" required="">
+
+                    <label for="email">E-mail*</label>
+                    <input type="email" name="user_email" required="">
+
+                    <label for="company">Empresa (Opcional)</label>
+                    <input type="text" name="subject">
+
+                    <label for="message">Mensagem*</label>
+                    <textarea rows="5" name="message" required="" placeholder="Descreva um pouco do seu projeto..."></textarea>
+
+                    <button type="submit" class="btn">Enviar Mensagem</button>
+                    <p id="form-success" class="success-message">Sua mensagem foi enviada com sucesso!</p>
+                </form>
+                <div class="social">
+                    <h3>Entre em contato:</h3>
+                    <ul>
+                        <li><a href="https://www.instagram.com/anndersom_naum/" target="_blank"><i class="fa-brands fa-instagram"></i>Instagram</a></li>
+                        <li><a href="https://www.linkedin.com/in/anndersom-naum-costa-sousa" target="_blank"><i class="fa-brands fa-linkedin"></i>Linkedin</a></li>
+                        <li><a href="https://github.com/Anndersom" target="_blank"><i class="fa-brands fa-github"></i>GitHub</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>  
+    </main>  
+    <footer>
+        <p>&copy; <span id="current-year">Ano atual</span> Anndersom Naum. Todos os direitos reservados.
+            <!--<a href="/termos-de-uso.html">Termos de Uso</a> | 
+            <a href="/politica-de-privacidade.html">Política de Privacidade</a>-->
+        </p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
