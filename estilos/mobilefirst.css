@@ -48,6 +48,7 @@ header{ /* cabeçalho */
     padding: 10px;
     background-color: rgb(from var(--fundo) r g b / 0.5); /* deixar o fundo transparente sem mexer na variavel */
     backdrop-filter: blur(10px); /* fazer efeito de vidro embaçado */
+    font-weight: bold;
     position: sticky; /* cola o cabeçalho no topo */
     top: 0;
 }
@@ -75,9 +76,9 @@ header p{
     overflow: hidden;
     list-style: none;
     text-align: right;
-    display: none;
     background-color: rgb( from var(--fundo) r g b / 0.5);
     border-radius: 0 0 0 20px;
+    display: none;
     animation: entradalinks .5s both;
 }
 
@@ -96,17 +97,17 @@ header p{
     
 }
 
-.animar-entrada li{
+.animar-entrada li{ /* classe para animar a entrada dos links */
     animation: entradalinks .5s both;
 }
 
-#nav-links li:nth-child(1) { animation-delay: .1s; }
+#nav-links li:nth-child(1) { animation-delay: .1s; } /* delay para o efeito de entrada */
 #nav-links li:nth-child(2) { animation-delay: .2s; }
 #nav-links li:nth-child(3) { animation-delay: .3s; }
 #nav-links li:nth-child(4) { animation-delay: .4s; }
 #nav-links li:nth-child(5) { animation-delay: .5s; }
 
-@keyframes entradalinks {
+@keyframes entradalinks { /* animação */
     from{
         opacity: 0;
         transform: translatex(100%);
