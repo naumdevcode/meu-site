@@ -118,16 +118,33 @@ header p{
     }
 }
 
-main{
+main{ /* conteudo do site */
     grid-area: main;
+}
+
+section{ /* toda section com espaçamento embaixo */
+    margin-bottom: 20px !important; /* dar mais prioridade */
 }
 
 section#perfil{
     padding: 20px;
 }
 
+#foto-perfil{
+    width: 30vw; /* tamanho responsivo */
+    min-width: 250px;
+    max-width: 500px; /*! precisa ajustar para tela maiores*/
+    margin: auto;
+}
+
 #foto-perfil img{
-    width: 15em;
+    width: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+    aspect-ratio: 1 / 1;
+    object-position: 10px -10px;
+    box-shadow: 0 0 10px #000000;
+    /* filter: drop-shadow(0 0 5px #ffffff80); */ /* sombra somente na imagem*/
 }
 
 #titulo-perfil{
