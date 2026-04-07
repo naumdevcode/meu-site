@@ -15,6 +15,11 @@
     --texto:#1d2d50;
     --destaque:#ff4500;
     --destaque-secundario:lightblue; */
+
+    --cor-html:#E34C26;  /*! trocar os icones depois */
+    --cor-css:#1572B6;
+    --cor-js:#F7DF1E;
+    --cor-py:#306998;
 }
 
 *{ /* resert geral*/
@@ -26,10 +31,14 @@
         color: inherit;
         text-decoration: none;
     }
+    ul{
+        list-style: none;
+    }
 }
 
 html, body{
-    width: 97vw;
+    width: 97vw; 
+    margin: auto; /*!teste*/ 
 }
 
 body{
@@ -49,10 +58,10 @@ header{ /* cabeçalho */
     display: flex;
     justify-content: space-between;
     font-size: 1.5em;
+    font-weight: bold;
     padding: 10px;
     background-color: rgb(from var(--fundo) r g b / 0.5); /* deixar o fundo transparente sem mexer na variavel */
     backdrop-filter: blur(10px); /* fazer efeito de vidro embaçado */
-    font-weight: bold;
     position: sticky; /* cola o cabeçalho no topo */
     top: 0;
     margin-bottom: 50px;
@@ -76,10 +85,9 @@ header p{
 #nav-links{
     position: absolute;
     right: 0;
-    top: 100%;
+    top: calc(1.5em + 1px);
     width: 160px;
     overflow: hidden;
-    list-style: none;
     text-align: right;
     background-color: rgb( from var(--fundo) r g b / 0.5);
     border-radius: 0 0 0 20px;
@@ -179,7 +187,7 @@ section#sobre{ /* sobre mim*/
     border-radius: 20px;
 }
 
-section#sobre h2{
+.titulo-section{ /** estilo para os titulos das sections */
     font-family: var(--fonte-titulo);
     font-size: 1.5em;
     text-transform: capitalize;
@@ -204,6 +212,39 @@ hr { /* linha horizontal para estilizar */
 
 .destaque-texto{
     font-weight: bold;
+}
+
+section#tech{ /* minhas tecnologias */
+    width: 95%;
+    margin: auto;
+    padding: 20px;
+    text-align: justify;
+}
+
+section#tech h2{
+    text-shadow: 0 0 10px var(--destaque);
+}
+
+section#tech ul{
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 3em;
+}
+
+#i-html{  /*! trocar os icones depois */
+    color: var(--cor-html);
+}
+
+#i-css{
+    color: var(--cor-css);
+}
+
+#i-js{
+    color: var(--cor-js);
+}
+
+#i-py{
+    color: var(--cor-py);
 }
 
 footer{
