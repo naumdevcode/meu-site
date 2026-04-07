@@ -176,7 +176,7 @@ section{ /* toda section com espaçamento embaixo */
     text-shadow: 0 0 5px var(--destaque);
 }
 
-section#sobre{ /* sobre mim*/
+.card-section{ /** estilo para os cards */
     background-color: var(--card);
     color: var(--texto-secundario);
     width: 95%;
@@ -185,6 +185,10 @@ section#sobre{ /* sobre mim*/
     text-align: justify;
     line-height: 1.3em;
     border-radius: 20px;
+    p{
+        text-indent: 1em;
+        margin-bottom: 10px;
+    }
 }
 
 .titulo-section{ /** estilo para os titulos das sections */
@@ -193,11 +197,6 @@ section#sobre{ /* sobre mim*/
     text-transform: capitalize;
     text-indent: .5em;
     margin-bottom: 20px;
-}
-
-section#sobre p{
-    text-indent: 1em;
-    margin-bottom: 10px;
 }
 
 hr { /* linha horizontal para estilizar */
@@ -245,6 +244,22 @@ section#tech ul{
 
 #i-py{
     color: var(--cor-py);
+}
+
+section#projetos .card-projeto{
+    display: flex;
+    gap: 20px;
+    margin-bottom: 20px;
+    background-color: rgb(from var(--fundo) r g b / .5);
+    padding: 20px;
+    border-radius: 20px;
+}
+
+section#projetos img{
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    width: 30%;
+    /* max-width: 180px; */ /*! analisar depois */
 }
 
 footer{
